@@ -29,7 +29,7 @@ public class Bounce : MonoBehaviour {
 
             startPos = gameObject.transform.position;
 
-            if (Input.GetKeyDown(KeyCode.UpArrow) && gameObject.transform.position == endPos)
+            if (Input.GetKeyDown(KeyCode.RightArrow) && gameObject.transform.position == endPos)
             {
                 Jump = true;
                 endPos = new Vector3(transform.position.x + 1, transform.position.y, transform.position.z);
@@ -37,7 +37,7 @@ public class Bounce : MonoBehaviour {
 
 
             }
-            if (Input.GetKeyDown(KeyCode.DownArrow) && gameObject.transform.position == endPos)
+            if (Input.GetKeyDown(KeyCode.LeftArrow) && gameObject.transform.position == endPos)
             {
                 Jump = true;
                 endPos = new Vector3(transform.position.x - 1, transform.position.y, transform.position.z);
@@ -45,7 +45,7 @@ public class Bounce : MonoBehaviour {
 
 
             }
-            if (Input.GetKeyDown(KeyCode.LeftArrow) && gameObject.transform.position == endPos)
+            if (Input.GetKeyDown(KeyCode.UpArrow) && gameObject.transform.position == endPos)
             {
                 Jump = true;
 
@@ -54,7 +54,7 @@ public class Bounce : MonoBehaviour {
 
 
             }
-            if (Input.GetKeyDown(KeyCode.RightArrow) && gameObject.transform.position == endPos)
+            if (Input.GetKeyDown(KeyCode.DownArrow) && gameObject.transform.position == endPos)
             {
                 Jump = true;
                 endPos = new Vector3(transform.position.x, transform.position.y, transform.position.z - 1);
@@ -79,7 +79,7 @@ public class Bounce : MonoBehaviour {
                 if (Mathf.Round(Perc) == 1)
                 {
 
-                    Jump = false;
+                    //Jump = false;
                 }
             }
         

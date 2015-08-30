@@ -24,7 +24,7 @@ public class AnimationsScript : MonoBehaviour {
         {
 
             anim.SetBool("Jump", true);
-            
+            Bounce.Jump = false;
 
         }
         else
