@@ -34,6 +34,18 @@ public class AnimationsScript : MonoBehaviour {
         
         
         }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            anim.SetBool("Shoot", true);
+
+
+        }
+        else
+        {
+
+            anim.SetBool("Shoot", false);
+
+        }
         if (Input.GetKeyDown(KeyCode.RightArrow)  )
         {
             transform.rotation = Quaternion.Euler(0, 90, 0);
