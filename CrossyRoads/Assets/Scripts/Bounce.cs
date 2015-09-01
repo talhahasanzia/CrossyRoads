@@ -15,7 +15,7 @@ public class Bounce : MonoBehaviour {
     public static bool Jump;
 	// Update is called once per frame
 	void Update () {
-        Debug.Log("Jump: " + Jump);
+       // Debug.Log("Jump: " + Jump);
       
             if (Perc == 1)
             {
